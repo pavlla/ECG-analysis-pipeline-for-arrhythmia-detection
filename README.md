@@ -46,5 +46,19 @@ To denoise ECG signals, wavelet transformation using the db5 wavelet and Butterw
 <img width="843" alt="Zrzut ekranu 2025-01-31 o 17 43 35" src="https://github.com/user-attachments/assets/e9b2d218-b755-4e3b-b953-d0a5d0cf0d7d" />
 <img width="837" alt="Zrzut ekranu 2025-01-31 o 17 43 45" src="https://github.com/user-attachments/assets/beb42354-6ab7-4242-af87-276496ac7538" />
 
+# Feature extractions
+
+After denoising and segmenting the signal, 18 features were extracted (Table 3.2), which
+can be categorized into four main groups: heart rate variability (HRV) features for tracking
+time-domain intervals between QRS complexes (Min Heart Rate, Max Heart Rate, Average
+Heart Rate, rMSSD, PRR50, PRR20, SDSD, SDRR), features based on Poincaré metrics (SD1,
+SD2), morphological features (Average Peak Amplitude, PQ/QR/RS/ST Delays), and
+frequency-domain features (Low Frequency, Mid Frequency, High Frequency).
+
+# CNN-BiLSTM architecture with attention mechanism
+
+A Bi-LSTM deep learning model was used, which processes sequences in both directions simultaneously, along with an attention mechanism, enabling more accurate classification of ECG signals. The first part of the model consists of convolutional layers (Conv1D), responsible for extracting features and patterns from the signal. These layers use filters of varying sizes, ReLU activation, and L2 regularization. BatchNormalization and MaxPooling1D are applied after each layer to stabilize the learning process and reduce the dimensionality of the data. The signals then pass through a Bi-LSTM layer, and the attention mechanism assigns weights to the important parts of the signal, improving selectivity in ECG analysis. After processing the signals, the data from the attention layer and additional features are combined using a Concatenate layer. They then pass through a Dense layer with BatchNormalization and dropout to prevent overfitting. The model ends with an output layer with a softmax activation function, calculating the probability of belonging to a given class. The Adam optimizer was used to adjust the learning rates during training.
+
+<img width="1016" alt="Zrzut ekranu 2025-01-31 o 17 56 37" src="https://github.com/user-attachments/assets/6305e299-a5d3-4f80-825d-90f1373417f0" />
 
 
