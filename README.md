@@ -21,7 +21,7 @@ The aim of the project was to develop an ECG signal analysis pipeline capable of
 
 This process includes several key steps: 
 
--Obtaining a database
+Obtaining a database
 -ECG signal pre-processing (including noise and artifact removal).
 Feature extractions.
 Data augmentation for class N.
