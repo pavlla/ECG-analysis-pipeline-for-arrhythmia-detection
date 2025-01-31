@@ -61,4 +61,24 @@ A Bi-LSTM deep learning model was used, which processes sequences in both direct
 
 <img width="1016" alt="Zrzut ekranu 2025-01-31 o 17 56 37" src="https://github.com/user-attachments/assets/6305e299-a5d3-4f80-825d-90f1373417f0" />
 
+# Results
 
+The classification model achieved very good results in arrhythmia classification, demonstrating high accuracy, precision and sensitivity, confirming its ability to effectively distinguish three types of arrhythmia: sinus (N), atrial (A) and ventricular (V). The model achieved a high accuracy of 0.87, which means it correctly classified 87% of ECG segments into the appropriate classes.
+
+<img width="664" alt="Zrzut ekranu 2025-01-31 o 20 31 46" src="https://github.com/user-attachments/assets/41cb2e2c-299a-441c-81b0-2299756bd5a2" />
+
+<img width="658" alt="Zrzut ekranu 2025-01-31 o 20 31 59" src="https://github.com/user-attachments/assets/a02a8675-a278-4a38-bbd7-335926a55cdb" />
+
+<img width="465" alt="Zrzut ekranu 2025-01-31 o 20 32 15" src="https://github.com/user-attachments/assets/73250822-e6e0-478d-9d06-a4187e4ea5bd" />
+
+# Use of the model for real-time arrhythmia detection
+
+The ECG signal recorded in real time by a wearable device allows ongoing monitoring of the patient's heart rate. Based on this, the classification model automatically detects and predicts various types of arrhythmia, such as sinus, atrial and ventricular arrhythmia. The signal is analyzed by dividing it into 5-second segments, which are then assessed for cardiac arrhythmias. This makes it possible to continuously monitor the patient's health condition and quickly detect abnormalities. Such solutions can be integrated with mobile applications or other devices, which allows for immediate response in the event of a threat. Visualizing the results on an ECG graph makes it easier for the doctor or monitoring system to take appropriate actions, which is crucial for the patient's health.
+
+<img width="609" alt="Zrzut ekranu 2025-01-31 o 20 37 41" src="https://github.com/user-attachments/assets/db98c673-f28a-48cc-8044-28bcb3ef8c8c" />
+
+# Conclusions
+
+The aim of this study was to develop a pipeline for analyzing the ECG signal to detect arrhythmias for monitoring space missions and terrestrial applications, using the CNN-BiLSTM hybrid neural network. This model combines the features of convolutional networks with the capabilities of recurrent Bi-LSTM networks. It is designed to identify three types of arrhythmia: sinus, atrial and ventricular. The results indicate high effectiveness in diagnosing sinus, atrial and ventricular arrhythmia.  The developed model, based on morphological features and heart rate variability (HRV), demonstrates comprehensive effectiveness, achieving an accuracy of 87%.
+
+Pipeline was designed to continuously monitor astronauts' ECG signals, enabling early detection of cardiac problems, which is crucial during long-term space missions. Additionally, it can be used in wearable devices for early detection of arrhythmias in patients' daily lives.
