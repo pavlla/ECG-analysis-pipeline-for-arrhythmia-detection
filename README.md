@@ -21,12 +21,14 @@ The aim of the project was to develop an ECG signal analysis pipeline capable of
 
 This process includes several key steps: 
 
-Obtaining a database
--ECG signal pre-processing (including noise and artifact removal).
-Feature extractions.
-Data augmentation for class N.
-Designing a BiLSTM hybrid network model.
-Model testing.
-Model evaluation and inference. 
-Using a model to detect real-time arrhythmias.
+•	Obtaining a database
+•	ECG signal pre-processing (including noise and artifact removal).
+•	Feature extractions.
+•	Data augmentation for class N.
+•	Designing a BiLSTM hybrid network model.
+•	Model training and testing.
+•	Model evaluation and inference. 
+•	Using a model to detect real-time arrhythmias.
+
+
 <img width="747" alt="Zrzut ekranu 2025-01-31 o 16 47 56" src="https://github.com/user-attachments/assets/f48d88ea-2eaf-4067-b603-d4db508410fe" />
