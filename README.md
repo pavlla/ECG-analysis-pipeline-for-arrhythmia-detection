@@ -43,4 +43,9 @@ To denoise ECG signals, wavelet transformation using the db5 wavelet and Butterw
 
 <img width="827" alt="Zrzut ekranu 2025-01-31 o 17 41 52" src="https://github.com/user-attachments/assets/dae74ed0-c336-471d-b6bc-aa8004f877ab" />
 
+<img width="828" alt="Zrzut ekranu 2025-01-31 o 17 43 19" src="https://github.com/user-attachments/assets/438060fc-a9d6-4d5c-bbf0-8731a2fe5fca" />
+<img width="843" alt="Zrzut ekranu 2025-01-31 o 17 43 35" src="https://github.com/user-attachments/assets/e9b2d218-b755-4e3b-b953-d0a5d0cf0d7d"
+<img width="837" alt="Zrzut ekranu 2025-01-31 o 17 43 45" src="https://github.com/user-attachments/assets/beb42354-6ab7-4242-af87-276496ac7538" />
+ />
+
 
